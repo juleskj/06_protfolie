@@ -1,3 +1,10 @@
+:root {
+  --green: #a4c33b;
+  --dough: #fbf2dd;
+  --blue: #1f89c3;
+  --yellow: #f6c734;
+}
+
 /*********************************reset**********************************/
 * {
   margin: 0;
@@ -14,14 +21,36 @@ img {
 h1 {
   font-family: Libre Franklin;
   font-weight: 800;
+  color: var(--dough);
+  padding: 5px 20px;
 }
+
 h2 {
   font-family: Actor;
+  color: var(--dough);
+  padding: 5px 20px;
+}
+
+p {
+  font-size: 16px;
+  padding: 0 20px;
+  color: var(--dough);
 }
 
 a,
 p {
-  font-family: Maitree;
+  font-family: Mitr;
+  letter-spacing: 1px;
+}
+
+header a {
+  color: var(--dough);
+}
+
+footer p,
+h2,
+a {
+  color: var(--blue);
 }
 
 main {
@@ -30,20 +59,20 @@ main {
   margin-bottom: 10px;
 }
 
-header a {
-  color: #fbf2dd;
-}
-
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-image: url(billeder/bagground.svg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 
 footer {
   margin-top: auto;
-  background-color: #fbf2dd;
-  color: #1f89c3;
+  background-color: var(--dough);
+  color: var(--blue);
 }
 
 /******************** menu ********************/
@@ -52,9 +81,6 @@ footer {
   #menu_toggle {
     opacity: 0;
   }
-
-  /* #menu_toggle:checked + .menu_knap > span {
-  } */
 
   #menu_toggle:checked + .menu_knap > span::before {
     top: 0;
@@ -79,7 +105,7 @@ footer {
     cursor: pointer;
     z-index: 1;
     background-size: cover;
-    background-image: url(billeder/Star\ 2.svg);
+    background-image: url(billeder/logo.svg);
   }
 
   .menu_knap > span::before {
@@ -88,10 +114,6 @@ footer {
 
   .menu_knap > span::after {
     top: 0px;
-  }
-
-  li {
-    padding: 10px 0;
   }
 
   ul {
@@ -103,7 +125,11 @@ footer {
     height: 100%;
     margin: 0;
     padding: 80px 0;
-    background-color: #1f89c3;
+    background-color: var(--green);
+  }
+
+  li {
+    padding: 10px 0;
   }
 
   .logo {
@@ -115,8 +141,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
-  background-color: #1f89c3;
   padding: 20px 0;
+  margin-bottom: 30px;
 }
 
 li {
@@ -130,17 +156,17 @@ a {
 }
 
 .aktiv {
-  color: #f6c734;
+  color: var(--blue);
 }
 
 li :hover {
-  color: #1f89c3;
-  background-color: #f6c734;
+  color: var(--blue);
+  background-color: var(--yellow);
   border-radius: 2px;
 }
 
 .logo :hover {
-  background-color: #1f89c3;
+  background-color: transparent;
 }
 
 @media (min-width: 800px) {
@@ -161,15 +187,15 @@ li :hover {
     padding: 10px 0;
   }
 
-  header {
-    padding: 0;
-  }
-
   .logo img {
     width: 25%;
     height: 25%;
     padding: 10px;
     animation: rotate_kf 3s linear infinite;
+  }
+
+  .aktiv {
+    color: var(--green);
   }
 }
 
@@ -179,10 +205,10 @@ li :hover {
 
 @keyframes rotate_kf {
   0% {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
   100% {
-    rotate: 360deg;
+    transform: rotate(360deg);
   }
 }
 

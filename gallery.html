@@ -11,18 +11,36 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Actor&family=Libre+Franklin:wght@700;900&family=Maitree:wght@400;700&display=swap"
         rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <ul>
-            <li><a href="index.html">Forside</a></li>
-            <li><a href="om_os.html">Om os</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li class="aktiv"><a href="gallery.html">Gallery</a></li>
-        </ul>
 
+    <header>
+        <div class="hamburger-menu">
+            <input id="menu_toggle" type="checkbox">
+            <label class="menu_knap" for="menu_toggle">
+                <span></span>
+            </label>
+
+
+            <ul>
+                <li class="logo"><a href="index.html"><img src="billeder/logo.svg" alt="logo"></a></li>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="om_os.html">Om os</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a class="aktiv" href="gallery.html">Gallery</a></li>
+            </ul>
+
+
+        </div>
     </header>
+
+
     <main>
         <h1>Gallery</h1>
         <h2>Lorem</h2>
@@ -33,9 +51,27 @@
 
 
     <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ducimus voluptatum aliquid doloribus
-            perspiciatis, provident, tenetur libero, reiciendis ipsam veritatis laboriosam obcaecati recusandae
-            voluptate! Natus veniam ad commodi necessitatibus cumque.</p>
+        <div class="container">
+            <section class="kontakt">
+                <h2>Kontakt mig på</h2>
+                <p>Tlf: (+45)20 20 42 06</p>
+                <p>Mail: juje0003@stud.kea.dk</p>
+
+            </section>
+
+            <section class="potfolie">
+                <h2>Se mit arbejde</h2>
+                <ul>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+
+            </section>
+
+        </div>
+
+
+
     </footer>
 </body>
 <script src="javascript.js"></script>
