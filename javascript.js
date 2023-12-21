@@ -28,3 +28,19 @@ function clickIgen() {
   document.querySelector("span").offsetLeft;
   document.querySelector("span").addEventListener("click", clickMenuKnap);
 }
+
+document
+  .querySelector("#portfolie")
+  .addEventListener("click", function (event) {
+    window.location.href = "portfolio.html";
+  });
+
+document.querySelector("#gallery").addEventListener("click", function (event) {
+  window.location.href = "gallery.html";
+});
+
+document
+  .querySelector("#star_omos")
+  .addEventListener("mousedown", function (event) {
+    window.location.href = "om_os.html";
+  });

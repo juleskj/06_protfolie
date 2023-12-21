@@ -84,20 +84,6 @@ li :hover {
   color: var(--blue);
 }
 
-/*************** footer*************/
-
-footer section {
-  padding: 10px 15px;
-  margin: 10px;
-  text-align: center;
-}
-
-footer section ul {
-  align-items: center;
-  justify-content: center;
-  margin-right: 0;
-}
-
 /*************** animation *************/
 .rotate_360 {
   animation: rotate_kf 1s linear 1;
@@ -163,23 +149,39 @@ header a {
   color: var(--dough);
 }
 
-footer p,
-h2,
-a {
-  color: var(--blue);
-}
-
 body {
   width: 100%;
   background-image: url(billeder/phone_background.svg);
   background-size: cover;
 }
 
+/*************** footer*************/
+
 footer {
   margin-top: auto;
   background-color: var(--dough);
   color: var(--blue);
 }
+
+footer p,
+h2,
+a {
+  color: var(--blue);
+}
+
+.potfolie,
+.kontakt {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.kontakt ul {
+  align-items: center;
+  justify-content: center;
+  margin-right: 0;
+}
+
+/*************** desktop*************/
 
 @media (min-width: 800px) {
   header {
@@ -229,9 +231,10 @@ footer {
     background-size: cover;
   }
 
-  footer .container {
+  .footer_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 40px 0;
   }
 }

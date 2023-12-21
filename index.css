@@ -1,0 +1,43 @@
+.star_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 50px 0;
+}
+
+#portfolie,
+#gallery,
+#star_omos {
+  aspect-ratio: 1/1;
+  flex: 1 0 300px;
+  width: 50%;
+}
+
+.star1,
+.star2,
+.star3 {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#portfolie,
+#gallery,
+#star_omos :hover {
+  cursor: pointer;
+}
+
+.star1 {
+  background-image: url(billeder/star1.svg);
+}
+.star2 {
+  background-image: url(billeder/star2.svg);
+}
+.star3 {
+  background-image: url(billeder/star3.svg);
+}
+
+@media (min-width: 800px) {
+}
