@@ -1,80 +1,3 @@
-:root {
-  --green: #a4c33b;
-  --dough: #fbf2dd;
-  --blue: #1f89c3;
-  --yellow: #f6c734;
-}
-
-/*********************************reset**********************************/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  border-radius: 5px;
-  max-width: 100%;
-  height: auto;
-}
-
-/*********************************fonts**********************************/
-h1 {
-  font-family: Libre Franklin;
-  font-weight: 800;
-  color: var(--dough);
-  padding: 5px 20px;
-}
-
-h2 {
-  font-family: Actor;
-  color: var(--dough);
-  padding: 5px 20px;
-}
-
-p {
-  font-size: 16px;
-  padding: 0 20px;
-  color: var(--dough);
-}
-
-a,
-p {
-  font-family: Mitr;
-  letter-spacing: 1px;
-}
-
-header a {
-  color: var(--dough);
-}
-
-footer p,
-h2,
-a {
-  color: var(--blue);
-}
-
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-image: url(billeder/phone_background.svg);
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-}
-
-footer {
-  margin-top: auto;
-  background-color: var(--dough);
-  color: var(--blue);
-}
-
 /******************** menu ********************/
 
 @media (max-width: 800px) {
@@ -106,14 +29,6 @@ footer {
     z-index: 1;
     background-size: cover;
     background-image: url(billeder/logo.svg);
-  }
-
-  .menu_knap > span::before {
-    top: 0;
-  }
-
-  .menu_knap > span::after {
-    top: 0px;
   }
 
   .hamburger-menu ul {
@@ -169,7 +84,108 @@ li :hover {
   color: var(--blue);
 }
 
+/*************** footer*************/
+
+footer section {
+  padding: 10px 15px;
+  margin: 10px;
+  text-align: center;
+}
+
+footer section ul {
+  align-items: center;
+  justify-content: center;
+  margin-right: 0;
+}
+
+/*************** animation *************/
+.rotate_360 {
+  animation: rotate_kf 1s linear 1;
+}
+
+@keyframes rotate_kf {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*********************************Farve**********************************/
+
+:root {
+  --green: #a4c33b;
+  --dough: #fbf2dd;
+  --blue: #1f89c3;
+  --yellow: #f6c734;
+}
+
+/*********************************reset**********************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+/*********************************fonts**********************************/
+h1 {
+  font-family: Libre Franklin;
+  font-weight: 800;
+  color: var(--dough);
+  padding: 5px 20px;
+}
+
+h2 {
+  font-family: Actor;
+  color: var(--dough);
+  padding: 5px 20px;
+}
+
+p {
+  font-size: 16px;
+  padding: 0 20px;
+  color: var(--dough);
+}
+
+a,
+p {
+  font-family: Mitr;
+  letter-spacing: 1px;
+}
+
+header a {
+  color: var(--dough);
+}
+
+footer p,
+h2,
+a {
+  color: var(--blue);
+}
+
+body {
+  width: 100%;
+  background-image: url(billeder/phone_background.svg);
+  background-size: cover;
+}
+
+footer {
+  margin-top: auto;
+  background-color: var(--dough);
+  color: var(--blue);
+}
+
 @media (min-width: 800px) {
+  header {
+    padding: 0;
+  }
+
   #menu_toggle {
     display: none;
   }
@@ -199,42 +215,23 @@ li :hover {
   }
 
   /*************** body & footer*************/
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
 
   body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-image: url(billeder/bagground.svg);
+    background-size: cover;
   }
 
   footer .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-}
-
-/*************** footer*************/
-
-section {
-  padding: 10px 15px;
-  margin: 10px;
-  text-align: center;
-}
-
-section ul {
-  align-items: center;
-  justify-content: center;
-  margin-right: 0;
-}
-
-/*************** animation *************/
-.rotate_360 {
-  animation: rotate_kf 1s linear 1;
-}
-
-@keyframes rotate_kf {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }

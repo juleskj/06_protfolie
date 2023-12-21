@@ -1,16 +1,12 @@
-// document.addEventListener("scroll", function (event) {
-//   console.log("der scrolles");
+document.addEventListener("scroll", function (event) {
+  console.log("der scrolles");
 
-//   if (scrollY > 850) {
-//     document.querySelector(".box1").style.top = "0%";
-//     document.querySelector(".box2").style.top = "0%";
-//     document.querySelector(".box3").style.top = "0";
-//   } else {
-//     document.querySelector(".box1").style.top = "40%";
-//     document.querySelector(".box2").style.top = "40%";
-//     document.querySelector(".box3").style.top = "40px";
-//   }
-// });
+  if (scrollY > 10) {
+    document.querySelector("header").style.backgroundColor = "#1f89c3";
+  } else {
+    document.querySelector("header").style.backgroundColor = "transparent";
+  }
+});
 
 document.querySelector(" span").addEventListener("click", clickMenuKnap);
 

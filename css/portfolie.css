@@ -1,0 +1,40 @@
+#web_02 {
+  background-color: var(--dough);
+}
+
+#UX-UI_03 {
+  background-color: #d1e09c;
+}
+
+#animation_04 {
+  background-color: #f3c0c9;
+}
+
+#videosite_05 {
+  background-color: #8ec1dd;
+}
+
+#virksomhedsite_05 {
+  background-color: #8ec1dd;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(billeder/phone_background.svg);
+  background-size: cover;
+}
+
+section {
+  margin: 150px 0;
+  padding: 70px 45px;
+  color: var(--blue);
+}
+
+section p {
+  color: var(--blue);
+}
+
+section img {
+  margin: 32px 0;
+}
