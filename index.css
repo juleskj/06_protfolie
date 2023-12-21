@@ -12,6 +12,7 @@
 #star_omos {
   aspect-ratio: 1/1;
   width: 40%;
+  flex: 1 0 300px;
 }
 
 .star1,
