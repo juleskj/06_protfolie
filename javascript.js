@@ -1,4 +1,4 @@
-document.addEventListener("scroll", function (event) {
+document.addEventListener("scroll", function () {
   console.log("der scrolles");
 
   if (scrollY > 10) {
@@ -29,18 +29,16 @@ function clickIgen() {
   document.querySelector("span").addEventListener("click", clickMenuKnap);
 }
 
-document
-  .querySelector("#portfolie")
-  .addEventListener("click", function (event) {
-    window.location.href = "portfolio.html";
-  });
+//her gør jeg når jeg klikker på containerne så går den til de valgte sider, ved window.location.href
 
-document.querySelector("#gallery").addEventListener("click", function (event) {
+document.querySelector("#portfolie").addEventListener("click", function () {
+  window.location.href = "portfolio.html";
+});
+
+document.querySelector("#gallery").addEventListener("click", function () {
   window.location.href = "gallery.html";
 });
 
-document
-  .querySelector("#star_omos")
-  .addEventListener("mousedown", function (event) {
-    window.location.href = "om_os.html";
-  });
+document.querySelector("#star_omos").addEventListener("mousedown", function () {
+  window.location.href = "om_os.html";
+});

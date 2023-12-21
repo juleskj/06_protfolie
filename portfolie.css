@@ -19,9 +19,9 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   background-image: url(billeder/phone_background.svg);
+  background-position: center;
+
   background-size: cover;
 }
 
@@ -37,4 +37,8 @@ section p {
 
 section img {
   margin: 32px 0;
+}
+
+h2 {
+  padding: 20px 0;
 }

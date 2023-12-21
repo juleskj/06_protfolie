@@ -150,12 +150,17 @@ header a {
 }
 
 body {
-  width: 100%;
   background-image: url(billeder/phone_background.svg);
+  height: 100%;
+  background-position: center;
+  background-repeat: repeat-y;
   background-size: cover;
 }
 
 /*************** footer*************/
+main {
+  min-height: 100vh;
+}
 
 footer {
   margin-top: auto;
@@ -218,6 +223,7 @@ a {
 
   /*************** body & footer*************/
   main {
+    min-height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -226,9 +232,13 @@ a {
   body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+
     background-image: url(billeder/bagground.svg);
+    background-position: center;
+    background-repeat: repeat-y;
     background-size: cover;
+    height: 100%;
+    width: 100%;
   }
 
   .footer_container {
