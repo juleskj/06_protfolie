@@ -1,3 +1,54 @@
+/*********************************Farve**********************************/
+
+:root {
+  --green: #a4c33b;
+  --dough: #fbf2dd;
+  --blue: #1f89c3;
+  --yellow: #f6c734;
+}
+
+/*********************************reset**********************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border-radius: 2px;
+  max-width: 100%;
+  height: auto;
+}
+
+/*********************************fonts**********************************/
+h1 {
+  font-family: Libre Franklin;
+  font-weight: 800;
+  color: var(--dough);
+  padding: 5px 20px;
+}
+
+h2 {
+  font-family: Actor;
+  color: var(--dough);
+  padding: 5px 20px;
+}
+
+p {
+  font-size: 20px;
+  padding: 0 20px;
+  color: var(--dough);
+}
+
+a,
+p {
+  font-family: Mitr;
+  letter-spacing: 1px;
+}
+
+header a {
+  color: var(--dough);
+}
+
 /******************** menu ********************/
 
 @media (max-width: 800px) {
@@ -98,68 +149,19 @@ li :hover {
   }
 }
 
-/*********************************Farve**********************************/
-
-:root {
-  --green: #a4c33b;
-  --dough: #fbf2dd;
-  --blue: #1f89c3;
-  --yellow: #f6c734;
-}
-
-/*********************************reset**********************************/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  border-radius: 5px;
-  max-width: 100%;
-  height: auto;
-}
-
-/*********************************fonts**********************************/
-h1 {
-  font-family: Libre Franklin;
-  font-weight: 800;
-  color: var(--dough);
-  padding: 5px 20px;
-}
-
-h2 {
-  font-family: Actor;
-  color: var(--dough);
-  padding: 5px 20px;
-}
-
-p {
-  font-size: 16px;
-  padding: 0 20px;
-  color: var(--dough);
-}
-
-a,
-p {
-  font-family: Mitr;
-  letter-spacing: 1px;
-}
-
-header a {
-  color: var(--dough);
-}
-
 body {
   background-image: url(billeder/phone_background.svg);
   height: 100%;
+  width: 100%;
   background-position: center;
-  background-repeat: repeat-y;
+  background-repeat: repeat-x;
   background-size: cover;
 }
 
 /*************** footer*************/
 main {
   min-height: 100vh;
+  padding-bottom: 100px;
 }
 
 footer {
@@ -230,15 +232,7 @@ a {
   }
 
   body {
-    display: flex;
-    flex-direction: column;
-
     background-image: url(billeder/bagground.svg);
-    background-position: center;
-    background-repeat: repeat-y;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
   }
 
   .footer_container {

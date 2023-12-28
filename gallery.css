@@ -1,0 +1,25 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.gallery img {
+  margin: 5px 0;
+}
+
+.gallery :nth-child(3) {
+  grid-column: span 2;
+}
+
+.gallery :nth-child(6) {
+  grid-column: span 2;
+}
+
+.gallery :nth-child(9) {
+  grid-column: span 2;
+}
+
+.gallery :nth-child(12) {
+  grid-column: span 2;
+}
