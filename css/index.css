@@ -13,6 +13,7 @@
   aspect-ratio: 1/1;
   width: 40%;
   flex: 1 0 300px;
+  display: grid;
 }
 
 .star1,
@@ -23,21 +24,77 @@
   height: 100%;
 }
 
-#portfolie,
-#gallery,
-#star_omos :hover {
-  cursor: pointer;
+.star1,
+.star2,
+.star3,
+h1 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  align-self: center;
+  justify-self: center;
+}
+
+#portfolie h1,
+#gallery h1,
+#star_omos h1 {
+  color: var(--blue);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .star1 {
-  background-image: url(billeder/star1.svg);
+  background-color: var(--dough);
+
+  clip-path: polygon(
+    50% 0%,
+    68% 25%,
+    98% 35%,
+    79% 56%,
+    79% 90%,
+    50% 80%,
+    21% 91%,
+    23% 57%,
+    2% 35%,
+    33% 25%
+  );
 }
 .star2 {
-  background-image: url(billeder/star2.svg);
+  background-color: var(--dough);
+
+  clip-path: polygon(
+    50% 0%,
+    68% 25%,
+    98% 35%,
+    79% 56%,
+    79% 90%,
+    50% 80%,
+    21% 91%,
+    23% 57%,
+    2% 35%,
+    33% 25%
+  );
 }
 .star3 {
-  background-image: url(billeder/star3.svg);
+  background-color: var(--dough);
+
+  clip-path: polygon(
+    50% 0%,
+    68% 25%,
+    98% 35%,
+    79% 56%,
+    79% 90%,
+    50% 80%,
+    21% 91%,
+    23% 57%,
+    2% 35%,
+    33% 25%
+  );
 }
 
 @media (min-width: 800px) {
+}
+
+.hover {
+  cursor: pointer;
+  background-color: var(--green);
 }

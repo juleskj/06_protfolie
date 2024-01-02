@@ -35,9 +35,3 @@ section p {
 section img {
   margin: 32px 0;
 }
-
-section h2,
-a {
-  padding: 20px 0;
-  color: var(--blue);
-}
