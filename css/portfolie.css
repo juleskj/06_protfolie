@@ -28,8 +28,24 @@ section {
   color: var(--blue);
 }
 
-section p {
+section p,
+section h2,
+section h1,
+section a {
   color: var(--blue);
+}
+
+section p {
+  padding: 15px 0;
+}
+
+section h1 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+section h2 {
+  padding: 15px 0;
 }
 
 section img {
