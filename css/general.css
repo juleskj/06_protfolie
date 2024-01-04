@@ -26,6 +26,7 @@ h1 {
   font-weight: 800;
   color: var(--dough);
   letter-spacing: 1px;
+  padding: 15px 15px;
 }
 
 h2 {
@@ -44,7 +45,7 @@ a,
 p {
   font-family: Hind Siliguri;
   letter-spacing: 1px;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 header a {
@@ -152,16 +153,14 @@ li :hover {
     transform: rotate(360deg);
   }
 }
-
-body {
-  background-image: url(billeder/phone_background.svg);
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-repeat: repeat-x;
-  background-size: cover;
+@media (max-width: 800px) {
+  body {
+    background-image: url(billeder/phone_background.svg);
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: top start;
+  }
 }
-
 /*************** footer*************/
 main {
   min-height: 100vh;
@@ -196,6 +195,20 @@ footer a {
 /*************** desktop*************/
 
 @media (min-width: 800px) {
+  /*************** fonte*************/
+  header a {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  h1 {
+    padding: 15px 10px;
+  }
+
+  /*************** menu*************/
   header {
     padding: 0;
   }
@@ -237,6 +250,8 @@ footer a {
   }
 
   body {
+    height: 100%;
+    background-size: cover;
     background-image: url(billeder/background_desktop.svg);
   }
 
@@ -245,12 +260,5 @@ footer a {
     flex-wrap: wrap;
     justify-content: center;
     padding: 40px 0;
-  }
-
-  p {
-    font-size: 25px;
-  }
-  h1 {
-    padding: 15px 10px;
   }
 }
