@@ -1,3 +1,7 @@
+p {
+  text-align: justify;
+}
+
 .star_container {
   display: flex;
   flex-wrap: wrap;

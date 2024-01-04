@@ -1,0 +1,35 @@
+dt,
+dd {
+  font-family: Hind Siliguri;
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: var(--dough);
+}
+
+dt {
+  font-size: 25px;
+}
+
+dl {
+  margin: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+dl div {
+  flex: 1 0 100px;
+  padding: 10px 10px;
+}
+
+#skills {
+  margin: 50px 0;
+}
+
+img {
+  border-radius: 50%;
+  width: 100%;
+  padding: 30px 0;
+}
+
+main {
+  position: static;
+}

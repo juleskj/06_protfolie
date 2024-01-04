@@ -25,17 +25,17 @@ h1 {
   font-family: Libre Franklin;
   font-weight: 800;
   color: var(--dough);
-  padding: 15px 10px;
+  letter-spacing: 1px;
 }
 
 h2 {
   font-family: Actor;
   color: var(--dough);
   padding: 10px 15px;
+  letter-spacing: 1px;
 }
 
 p {
-  font-size: 20px;
   color: var(--dough);
   padding: 0 15px;
 }
@@ -44,6 +44,7 @@ a,
 p {
   font-family: Hind Siliguri;
   letter-spacing: 1px;
+  font-size: 15px;
 }
 
 header a {
@@ -236,7 +237,7 @@ footer a {
   }
 
   body {
-    background-image: url(billeder/bagground.svg);
+    background-image: url(billeder/background_desktop.svg);
   }
 
   .footer_container {
@@ -244,5 +245,12 @@ footer a {
     flex-wrap: wrap;
     justify-content: center;
     padding: 40px 0;
+  }
+
+  p {
+    font-size: 25px;
+  }
+  h1 {
+    padding: 15px 10px;
   }
 }
