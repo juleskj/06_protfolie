@@ -158,8 +158,7 @@ li :hover {
   body {
     background-image: url(billeder/phone_background.svg);
     background-repeat: repeat-y;
-    background-size: contain;
-    background-position: top start;
+    background-size: cover;
   }
 }
 /*************** footer*************/

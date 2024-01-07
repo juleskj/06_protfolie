@@ -60,6 +60,10 @@ section img {
   padding: 10px 10px;
 }
 
+body {
+  background-attachment: fixed;
+}
+
 @media (min-width: 800px) {
   section {
     padding: 100px 150px;

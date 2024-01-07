@@ -17,19 +17,78 @@ dl {
 }
 dl div {
   flex: 1 0 100px;
-  padding: 10px 10px;
+  padding: 10px 30px;
 }
 
 #skills {
   margin: 50px 0;
 }
 
-img {
+#mit_billede img {
   border-radius: 50%;
-  width: 100%;
+  width: 80%;
   padding: 30px 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 main {
-  position: static;
+  position: relative;
+}
+.star_1,
+.star_2 {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  #mit_billede img {
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    top: -33px;
+    left: 74px;
+  }
+
+  .star_1,
+  .star_2 {
+    position: relative;
+    display: block;
+    width: 20%;
+    position: absolute;
+  }
+  .star_1 {
+    width: 10%;
+    top: 43%;
+    left: 5%;
+  }
+  .star_2 {
+    width: 13%;
+    top: 18%;
+    left: 37%;
+  }
+
+  #cv {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #tekt_om_mig,
+  #billde {
+    flex: 1 0 200px;
+    padding: 0 30px;
+  }
+
+  #skills {
+    background-color: var(--green);
+    border-radius: 2px;
+  }
+
+  dl div {
+    flex: 1 0 50px;
+    padding: 10px 30px;
+  }
 }
