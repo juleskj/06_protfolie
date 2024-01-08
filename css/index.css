@@ -27,16 +27,16 @@
 .star1,
 .star2,
 .star3,
-h1 {
+h2 {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
   align-self: center;
   justify-self: center;
 }
 
-#portfolie h1,
-#gallery h1,
-#star_omos h1 {
+#portfolie h2,
+#gallery h2,
+#star_omos h2 {
   color: var(--blue);
   z-index: 1;
   pointer-events: none;

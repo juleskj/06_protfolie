@@ -74,4 +74,15 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .grid_2_1 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid_2_1 img {
+    height: 500px;
+    max-width: 100%;
+  }
 }

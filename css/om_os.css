@@ -41,6 +41,18 @@ main {
   display: none;
 }
 
+.programmer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-template-rows: repeat(1, 1fr);
+  gap: 10px;
+  padding: 20px 10px;
+  margin-bottom: 50px;
+}
+.programmer img {
+  border-radius: 50%;
+}
+
 @media (min-width: 800px) {
   #mit_billede img {
     margin-left: 0;
@@ -59,8 +71,8 @@ main {
   }
   .star_1 {
     width: 10%;
-    top: 43%;
-    left: 5%;
+    top: 42%;
+    left: 9%;
   }
   .star_2 {
     width: 13%;
@@ -90,5 +102,10 @@ main {
   dl div {
     flex: 1 0 50px;
     padding: 10px 30px;
+  }
+
+  .programmer {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    justify-content: center;
   }
 }

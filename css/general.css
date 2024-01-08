@@ -88,7 +88,7 @@ header a {
     background-image: url(billeder/logo.svg);
   }
 
-  .hamburger-menu ul {
+  .hamburger_menu ul {
     display: block;
     position: fixed;
     top: 0;
