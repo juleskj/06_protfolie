@@ -9,6 +9,7 @@
   height: 100%;
   margin: 5px 0;
   border-radius: 2%;
+  object-fit: contain;
 }
 
 .gallery :nth-child(3) {

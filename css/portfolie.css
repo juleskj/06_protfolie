@@ -85,4 +85,31 @@ body {
     height: 500px;
     width: 100%;
   }
+
+  #portfolie_knapper {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70%;
+    gap: 5px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #portfolie_knapper a {
+    margin: 0 5px;
+    padding: 5px 10px;
+    color: var(--text);
+    text-decoration: none;
+    background-color: var(--green);
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  #portfolie_knapper :hover {
+    color: var(--blue);
+    background-color: var(--yellow);
+    border-radius: 2px;
+  }
 }
