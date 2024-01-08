@@ -1,3 +1,7 @@
+#portfolie_knapper {
+  display: none;
+}
+
 #web_02 {
   background-color: var(--dough);
 }

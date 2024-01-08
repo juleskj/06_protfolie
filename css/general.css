@@ -84,7 +84,7 @@ header a {
     width: 50px;
     height: 50px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
     background-size: cover;
     background-image: url(billeder/logo.svg);
   }
@@ -113,7 +113,7 @@ header a {
 header {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   padding: 20px 0;
   margin-bottom: 30px;
 }
