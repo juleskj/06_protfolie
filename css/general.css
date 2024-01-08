@@ -186,6 +186,10 @@ footer a {
   text-align: center;
 }
 
+footer p {
+  text-align: center;
+}
+
 .kontakt ul {
   align-items: center;
   justify-content: center;
@@ -254,13 +258,13 @@ footer a {
     height: 100%;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url(billeder/background_desktop.svg);
+    background-image: url(billeder/background2.svg);
   }
 
   .footer_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 40px 0;
+    padding: 40px 0 20px 0;
   }
 }

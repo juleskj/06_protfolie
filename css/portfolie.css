@@ -83,6 +83,6 @@ body {
 
   .grid_2_1 img {
     height: 500px;
-    max-width: 100%;
+    width: 100%;
   }
 }

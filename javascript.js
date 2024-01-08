@@ -33,17 +33,23 @@ function clickIgen() {
 
 //her gør jeg når jeg klikker på containerne så går den til de valgte sider, ved window.location.href
 
-document.querySelector("#portfolie").addEventListener("click", function () {
-  window.location.href = "portfolio.html";
-});
+document
+  .querySelector("#portfolie")
+  .addEventListener("click", function clickPortfolio() {
+    window.location.href = "portfolio.html";
+  });
 
-document.querySelector("#gallery").addEventListener("click", function () {
-  window.location.href = "gallery.html";
-});
+document
+  .querySelector("#gallery")
+  .addEventListener("click", function clickGallery() {
+    window.location.href = "gallery.html";
+  });
 
-document.querySelector("#star_omos").addEventListener("mousedown", function () {
-  window.location.href = "om_os.html";
-});
+document
+  .querySelector("#star_omos")
+  .addEventListener("mousedown", function clickOmOs() {
+    window.location.href = "om_os.html";
+  });
 
 //
 //
